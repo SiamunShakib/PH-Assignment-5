@@ -1,11 +1,189 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" >
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>assignment 5</title>
+    <!-- daisy ui cdn --> 
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- font aswome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <title>Dev Board</title>
 </head>
-<body>
-    <h1>hello assignment 5</h1>
+<body class="bg-blue-50 px-3 min-h-screen pt-3 ">
+    <header>
+        <section class="nav  mx-auto md:max-w-[90%] 2xl:max-w-[1500px] 2xl:px-10 bg-white rounded-lg p-2">
+            <div class="flex justify-between">
+                <div class="flex items-center">
+                    <img class="mr-3" src="assets/logo.png" alt="">
+                    <head>Dev <b>Board</b></head>
+                </div>
+                <div class="flex items-center gap-2">
+                    <img class="w-5 mx-10" src="assets/checkbox.png" alt="">
+                    <img id="btn-theme" class="w-8" src="assets/theme-btn.png" alt="">
+                </div>
+            </div>
+        </section>
+    </header>
+
+
+<!--------- main section ---------->
+
+    <main class="mx-auto md:max-w-[90%] 2xl:max-w-[1500px] 2xl:px-10 mt-5">
+        
+        <section class="grid grid-cols-4 gap-x-3">
+            <div class="main-content col-span-3 grid grid-cols-3 gap-3 bg-white rounded-lg px-2 py-5 mb-10" >
+
+                <!-- first row -->
+                <div class="col-span-3 grid grid-cols-4 gap-x-3 border-b border-dashed pb-3">
+                    <div class="bg-blue-50 rounded-md flex gap-3 items-center justify-center  ">
+
+                        <i class="fa-solid fa-square-check bg-white p-2 w-min rounded-full" style="color: #0752d5;"></i>
+                        <div>
+                            <p class="text-gray-500">Task Assiged</p>
+                            <h1 id="task-counter">6</h1>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-center py-3 col-span-2 rounded-md bg-gradient-to-bl from-blue-500 to-blue-700">
+                        <img src="assets/board.png" alt="">
+                        <h3 class="text-white">Discover Something Bew Today!</h3>
+                    </div>
+                    <div class="bg-blue-50 rounded-md flex justify-center gap-x-2 items-center grid-cols-2">
+                        <img src="assets/calender.png" alt="">
+                        <h1 class="text-gray-500">Tue Feb 25, 2025</h1>
+                    </div>
+                </div>
+
+
+                <!-- second and third row -->
+                <div class="rounded-md bg-blue-50 ">
+                    <div class="p-4 space-y-3">
+                        <button class="bg-white rounded-xl px-3 text-gray-500">Shop Ease</button>
+                        <h2 id="title-text" class="title-text text-lg font-semibold"> Fix Mobile Button Issue</h2>
+                        <p class="bg-white rounded-md p-2 text-gray-500">If a dog chews shoes whose shoes does he choose?</p>
+                        <div class="card-actions justify-between items-center">
+                            <div class="">
+                                <p class="text-sm text-gray-500">Deadline</p>
+                                <p class="text-sm text-gray-500">21 March 2025</p>
+                            </div>
+                            <button id="btn-complete" class="btn-complete bg-blue-700 text-white font-bold px-3 py-1 rounded-md text-sm">Complete</button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="rounded-md bg-blue-50 ">
+                    <div class="p-4 space-y-3">
+                        <button class="bg-white rounded-xl px-3 text-gray-500">Shop Ease</button>
+                        <h2 class="card-title"> Fix Mobile Button Issue</h2>
+                        <p class="bg-white rounded-md p-2 text-gray-500">If a dog chews shoes whose shoes does he choose?</p>
+                        <div class="card-actions justify-between items-center">
+                            <div class="">
+                                <p class="text-sm text-gray-500">Deadline</p>
+                                <p class="text-sm text-gray-500">21 March 2025</p>
+                            </div>
+                            <button class="bg-blue-700 text-white font-bold px-3 py-1 rounded-md text-sm">Complete</button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="rounded-md bg-blue-50 ">
+                    <div class="p-4 space-y-3">
+                        <button class="bg-white rounded-xl px-3 text-gray-500">Shop Ease</button>
+                        <h2 class="card-title"> Fix Mobile Button Issue</h2>
+                        <p class="bg-white rounded-md p-2 text-gray-500">If a dog chews shoes whose shoes does he choose?</p>
+                        <div class="card-actions justify-between items-center">
+                            <div class="">
+                                <p class="text-sm text-gray-500">Deadline</p>
+                                <p class="text-sm text-gray-500">21 March 2025</p>
+                            </div>
+                            <button class="bg-blue-700 text-white font-bold px-3 py-1 rounded-md text-sm">Complete</button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="rounded-md bg-blue-50 ">
+                    <div class="p-4 space-y-3">
+                        <button class="bg-white rounded-xl px-3 text-gray-500">Shop Ease</button>
+                        <h2 class="card-title"> Fix Mobile Button Issue</h2>
+                        <p class="bg-white rounded-md p-2 text-gray-500">If a dog chews shoes whose shoes does he choose?</p>
+                        <div class="card-actions justify-between items-center">
+                            <div class="">
+                                <p class="text-sm text-gray-500">Deadline</p>
+                                <p class="text-sm text-gray-500">21 March 2025</p>
+                            </div>
+                            <button class="bg-blue-700 text-white font-bold px-3 py-1 rounded-md text-sm">Complete</button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="rounded-md bg-blue-50 ">
+                    <div class="p-4 space-y-3">
+                        <button class="bg-white rounded-xl px-3 text-gray-500">Shop Ease</button>
+                        <h2 class="card-title"> Fix Mobile Button Issue</h2>
+                        <p class="bg-white rounded-md p-2 text-gray-500">If a dog chews shoes whose shoes does he choose?</p>
+                        <div class="card-actions justify-between items-center">
+                            <div class="">
+                                <p class="text-sm text-gray-500">Deadline</p>
+                                <p class="text-sm text-gray-500">21 March 2025</p>
+                            </div>
+                            <button class="bg-blue-700 text-white font-bold px-3 py-1 rounded-md text-sm">Complete</button>
+                        </div>
+                    </div>
+                </div>
+
+
+                 <div class="rounded-md bg-blue-50 ">
+                    <div class="p-4 space-y-3">
+                        <button class="bg-white rounded-xl px-3 text-gray-500">Shop Ease</button>
+                        <h2 class="card-title"> Fix Mobile Button Issue</h2>
+                        <p class="bg-white rounded-md p-2 text-gray-500">If a dog chews shoes whose shoes does he choose?</p>
+                        <div class="card-actions justify-between items-center">
+                            <div class="">
+                                <p class="text-sm text-gray-500">Deadline</p>
+                                <p class="text-sm text-gray-500">21 March 2025</p>
+                            </div>
+                            <button class="bg-blue-700 text-white font-bold px-3 py-1 rounded-md text-sm">Complete</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+            <!-- history section -->
+            <div class="text-center bg-white rounded-lg px-2 py-5 mb-10">
+                <div>
+                    <div class="flex mx-auto w-full items-center justify-center mb-3 gap-x-3">
+                        <img class="h-4" src="assets/activity.png" alt="">
+                        <span>Activity Log</span>
+                    </div>
+                    <div>
+                        <button class="bg-blue-700 text-white font-bold px-3 py-1 rounded-md text-sm">Clear History</button>
+                    </div>
+                </div>
+
+                <div id="history-item" class="w-full h-60 mt-3 text-start pt-0 text-sm">
+
+                </div>
+            </div>
+
+                
+                
+               
+        </section>
+    </main>
+    
+
+
+
+    <script src="script/script.js"></script>
 </body>
 </html>
