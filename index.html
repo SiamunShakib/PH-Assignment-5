@@ -10,19 +10,30 @@
     <!-- font aswome link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora:wght@100..800&display=swap" rel="stylesheet">
 
     <title>Dev Board</title>
+
+
+
+   
 </head>
-<body class="bg-blue-50 px-3 min-h-screen pt-3 ">
+<body class="bg-blue-50 min-h-screen px-3  pt-3 font-poppins">
     <header>
-        <section class="nav  mx-auto md:max-w-[90%] 2xl:max-w-[1500px] 2xl:px-10 bg-white rounded-lg p-2">
+        <section class="nav  mx-auto md:max-w-[90%] 2xl:max-w-[1500px] bg-white rounded-lg p-2">
             <div class="flex justify-between">
                 <div class="flex items-center">
-                    <img class="mr-3" src="assets/logo.png" alt="">
-                    <head>Dev <b>Board</b></head>
+                    <img class="mr-3 h-8 my-3" src="assets/logo.png" alt="">
+                    <h1>Dev<b>Board</b></h1>
                 </div>
                 <div class="flex items-center gap-2">
-                    <img class="w-5 mx-10" src="assets/checkbox.png" alt="">
+                    <div class="flex items-center px-3 py-1 bg-blue-50 rounded-3xl">
+                        <img class="h-5" src="assets/checkbox.png" alt="">
+                    <h1 id="check-count" class="font-bold ml-3 font-bold">23</h1>
+                    </div>
                     <img id="btn-theme" class="w-8" src="assets/theme-btn.png" alt="">
                 </div>
             </div>
@@ -32,28 +43,31 @@
 
 <!--------- main section ---------->
 
-    <main class="mx-auto md:max-w-[90%] 2xl:max-w-[1500px] 2xl:px-10 mt-5">
+    <main class="mx-auto md:max-w-[90%] 2xl:max-w-[1500px] mt-5">
         
-        <section class="grid grid-cols-4 gap-x-3">
-            <div class="main-content col-span-3 grid grid-cols-3 gap-3 bg-white rounded-lg px-2 py-5 mb-10" >
+        <section class="grid grid-cols-1 lg:grid-cols-4 gap-x-3">
+            <div class="main-content  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:col-span-3 gap-3 bg-white rounded-lg px-2 py-5 mb-10" >
 
                 <!-- first row -->
-                <div class="col-span-3 grid grid-cols-4 gap-x-3 border-b border-dashed pb-3">
-                    <div class="bg-blue-50 rounded-md flex gap-3 items-center justify-center  ">
+                <div class=" grid grid-cols-1 md:col-span-2 md:grid-cols-2 lg:grid-cols-4 lg:col-span-3 gap-y-3 lg:gap-y-0 md:gap-x-3 border-b border-dashed pb-3">
+                    <!-- first column -->
+                    <div class="bg-blue-50 rounded-md flex gap-3 items-center justify-center py-8 ">
 
                         <i class="fa-solid fa-square-check bg-white p-2 w-min rounded-full" style="color: #0752d5;"></i>
                         <div>
                             <p class="text-gray-500">Task Assiged</p>
-                            <h1 id="task-counter">6</h1>
+                            <h1 class="font-bold" id="task-counter">6</h1>
                         </div>
                     </div>
-                    <div class="flex items-center justify-center py-3 col-span-2 rounded-md bg-gradient-to-bl from-blue-500 to-blue-700">
+                    <!-- middle column -->
+                    <div id="btn-discover" class="flex md:row-start-2 lg:row-auto items-center justify-center py-3 col-span-2 rounded-md bg-gradient-to-bl from-blue-300 to-blue-500">
                         <img src="assets/board.png" alt="">
                         <h3 class="text-white">Discover Something Bew Today!</h3>
                     </div>
-                    <div class="bg-blue-50 rounded-md flex justify-center gap-x-2 items-center grid-cols-2">
+                    <!-- last column -->
+                    <div class="bg-blue-50 rounded-md flex justify-center gap-x-2 items-center grid-cols-2 py-8">
                         <img src="assets/calender.png" alt="">
-                        <h1 class="text-gray-500">Tue Feb 25, 2025</h1>
+                        <h1 id="date" class="text-black "></h1>
                     </div>
                 </div>
 
@@ -77,15 +91,15 @@
 
                 <div class="rounded-md bg-blue-50 ">
                     <div class="p-4 space-y-3">
-                        <button class="bg-white rounded-xl px-3 text-gray-500">Shop Ease</button>
-                        <h2 class="card-title"> Fix Mobile Button Issue</h2>
+                        <button class=" bg-white rounded-xl px-3 text-gray-500">Soft Pay</button>
+                        <h2 class="title-text text-lg font-semibold"> Add pay success Model</h2>
                         <p class="bg-white rounded-md p-2 text-gray-500">If a dog chews shoes whose shoes does he choose?</p>
                         <div class="card-actions justify-between items-center">
                             <div class="">
                                 <p class="text-sm text-gray-500">Deadline</p>
-                                <p class="text-sm text-gray-500">21 March 2025</p>
+                                <p class="text-sm text-gray-500">25 March 2025</p>
                             </div>
-                            <button class="bg-blue-700 text-white font-bold px-3 py-1 rounded-md text-sm">Complete</button>
+                            <button id="btn-complete"  class="btn-complete bg-blue-700 text-white font-bold px-3 py-1 rounded-md text-sm">Complete</button>
                         </div>
                     </div>
                 </div>
@@ -93,15 +107,15 @@
 
                 <div class="rounded-md bg-blue-50 ">
                     <div class="p-4 space-y-3">
-                        <button class="bg-white rounded-xl px-3 text-gray-500">Shop Ease</button>
-                        <h2 class="card-title"> Fix Mobile Button Issue</h2>
+                        <button class="bg-white rounded-xl px-3 text-gray-500">Meta</button>
+                        <h2 class="card-title"> Add new reaction</h2>
                         <p class="bg-white rounded-md p-2 text-gray-500">If a dog chews shoes whose shoes does he choose?</p>
                         <div class="card-actions justify-between items-center">
                             <div class="">
                                 <p class="text-sm text-gray-500">Deadline</p>
-                                <p class="text-sm text-gray-500">21 March 2025</p>
+                                <p class="text-sm text-gray-500">31 March 2025</p>
                             </div>
-                            <button class="bg-blue-700 text-white font-bold px-3 py-1 rounded-md text-sm">Complete</button>
+                            <button class="btn-complete bg-blue-700 text-white font-bold px-3 py-1 rounded-md text-sm">Complete</button>
                         </div>
                     </div>
                 </div>
@@ -109,31 +123,15 @@
 
                 <div class="rounded-md bg-blue-50 ">
                     <div class="p-4 space-y-3">
-                        <button class="bg-white rounded-xl px-3 text-gray-500">Shop Ease</button>
-                        <h2 class="card-title"> Fix Mobile Button Issue</h2>
+                        <button class="bg-white rounded-xl px-3 text-gray-500">Programming Hero</button>
+                        <h2 class="card-title"> Fix video Loading Issue</h2>
                         <p class="bg-white rounded-md p-2 text-gray-500">If a dog chews shoes whose shoes does he choose?</p>
                         <div class="card-actions justify-between items-center">
                             <div class="">
                                 <p class="text-sm text-gray-500">Deadline</p>
                                 <p class="text-sm text-gray-500">21 March 2025</p>
                             </div>
-                            <button class="bg-blue-700 text-white font-bold px-3 py-1 rounded-md text-sm">Complete</button>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="rounded-md bg-blue-50 ">
-                    <div class="p-4 space-y-3">
-                        <button class="bg-white rounded-xl px-3 text-gray-500">Shop Ease</button>
-                        <h2 class="card-title"> Fix Mobile Button Issue</h2>
-                        <p class="bg-white rounded-md p-2 text-gray-500">If a dog chews shoes whose shoes does he choose?</p>
-                        <div class="card-actions justify-between items-center">
-                            <div class="">
-                                <p class="text-sm text-gray-500">Deadline</p>
-                                <p class="text-sm text-gray-500">21 March 2025</p>
-                            </div>
-                            <button class="bg-blue-700 text-white font-bold px-3 py-1 rounded-md text-sm">Complete</button>
+                            <button class=" btn-complete bg-blue-700 text-white font-bold px-3 py-1 rounded-md text-sm">Complete</button>
                         </div>
                     </div>
                 </div>
@@ -141,18 +139,37 @@
 
                  <div class="rounded-md bg-blue-50 ">
                     <div class="p-4 space-y-3">
-                        <button class="bg-white rounded-xl px-3 text-gray-500">Shop Ease</button>
-                        <h2 class="card-title"> Fix Mobile Button Issue</h2>
+                        <button class="bg-white rounded-xl px-3 text-gray-500">Google LLC</button>
+                        <h2 class="card-title">Integrate AI search </h2>
                         <p class="bg-white rounded-md p-2 text-gray-500">If a dog chews shoes whose shoes does he choose?</p>
                         <div class="card-actions justify-between items-center">
                             <div class="">
                                 <p class="text-sm text-gray-500">Deadline</p>
-                                <p class="text-sm text-gray-500">21 March 2025</p>
+                                <p class="text-sm text-gray-500">01 April 2025</p>
                             </div>
-                            <button class="bg-blue-700 text-white font-bold px-3 py-1 rounded-md text-sm">Complete</button>
+                            <button class="btn-complete bg-blue-700 text-white font-bold px-3 py-1 rounded-md text-sm">Complete</button>
                         </div>
                     </div>
                 </div>
+
+                
+
+                <div class="rounded-md bg-blue-50 ">
+                    <div class="p-4 space-y-3">
+                        <button class="bg-white rounded-xl px-3 text-gray-500">Polygon Tech</button>
+                        <h2 class="card-title"> Review Ami Probashi Site</h2>
+                        <p class="bg-white rounded-md p-2 text-gray-500">If a dog chews shoes whose shoes does he choose?</p>
+                        <div class="card-actions justify-between items-center">
+                            <div class="">
+                                <p class="text-sm text-gray-500">Deadline</p>
+                                <p class="text-sm text-gray-500">05 May 2025</p>
+                            </div>
+                            <button class="btn-complete bg-blue-700 text-white font-bold px-3 py-1 rounded-md text-sm">Complete</button>
+                        </div>
+                    </div>
+                </div>
+
+
 
             </div>
 
@@ -166,7 +183,7 @@
                         <span>Activity Log</span>
                     </div>
                     <div>
-                        <button class="bg-blue-700 text-white font-bold px-3 py-1 rounded-md text-sm">Clear History</button>
+                        <button id="clear-history" class="bg-blue-700 text-white font-bold px-3 py-1 rounded-md text-sm">Clear History</button>
                     </div>
                 </div>
 
@@ -185,5 +202,6 @@
 
 
     <script src="script/script.js"></script>
+    <script src="script/date.js"></script>
 </body>
 </html>
