@@ -1,13 +1,16 @@
 // blogs page
 document.getElementById('btn-discover').addEventListener('click', function(){
-    window.location.href="../blogs.html";
+    window.location.href="blogs.html";
 });
 
 
 // changing theme color
-document.getElementById('btn-theme').addEventListener("click", function() {
-    const randomColor = `#${Math.floor(Math.random()*11111111).toString(16)}`;
-    document.body.style.backgroundColor = randomColor;
+document.getElementById('btn-theme')
+    .addEventListener("click", function() {
+        const randomColor = `
+        #${Math.floor(Math.random()*111111).toString(16)}
+        `;
+        document.body.style.backgroundColor = randomColor;
 });
 
 
