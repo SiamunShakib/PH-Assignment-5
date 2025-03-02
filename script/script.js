@@ -16,19 +16,23 @@ document.getElementById('btn-theme')
 
 
 
-// adding history
+// complete button function
 const btnComplete = document.querySelectorAll('.btn-complete');
 const historyBox = document.getElementById('history-item');
 
 for(let i=0; i<btnComplete.length; i++){
+
+    
     const historyBox = document.getElementById('history-item')
-    const currentTime = new Date().toLocaleTimeString();
 
     btnComplete[i].addEventListener('click', function(){
         alert('Board updated Successfully');
         const title = btnComplete[i].parentElement.parentElement.children[1].innerText;
 
 
+        // adding history 
+        
+        const currentTime = new Date().toLocaleTimeString();
         const historyItem = document.createElement('p');
         historyItem.innerText = `
         You have completed the task ${title} at ${currentTime}
@@ -68,13 +72,11 @@ for(let i=0; i<btnComplete.length; i++){
 
 
  // clear history
-
  const clearHistory = document.getElementById('clear-history');
  const clearitem = document.getElementById('history-item')
  clearHistory.addEventListener('click',function(){
-    clearitem.remove();
+    clearitem.innerText="";
 })
-
 
 
 
